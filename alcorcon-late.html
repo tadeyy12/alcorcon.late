@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALCORCÓN LATE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00b894;
+      --secondary: #6c5ce7;
+      --accent: #fdcb6e;
+      --bg-dark: #0c0c0c;
+      --bg-light: #f1f2f6;
+      --text-light: #fff;
+      --text-dark: #2d3436;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      padding: 3rem 2rem;
+      text-align: center;
+      color: var(--text-light);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3.5rem;
+    }
+    header p {
+      font-size: 1.4rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 3rem;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      padding: 2rem;
+      border-radius: 15px;
+    }
+    .highlight {
+      color: var(--primary);
+      font-weight: bold;
+    }
+    .cta {
+      background: var(--accent);
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 2rem;
+      color: var(--text-dark);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      height: 250px;
+    }
+    form {
+      display: grid;
+      gap: 1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: 2px solid var(--primary);
+      font-size: 1rem;
+    }
+    input[type="submit"] {
+      background: var(--secondary);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+    .testimonials {
+      background: #ffeaa7;
+      color: #2d3436;
+      padding: 2rem;
+      border-radius: 15px;
+    }
+    .testimonial {
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+    footer {
+      background: var(--secondary);
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+    .social {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .social a {
+      margin: 0 0.5rem;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ALCORCÓN LATE</h1>
+    <p>Ocio nocturno saludable con energía, deporte y sabor</p>
+  </header>
+  <main>
+    <section>
+      <h2>Revoluciona tus noches</h2>
+      <p>ALCORCÓN LATE convierte los espacios deportivos cerrados en centros de vida con clases dirigidas, actividades deportivas, conciertos y comida saludable. De 20:00 a 03:00, los fines de semana cobran vida.</p>
+    </section>
+
+    <section>
+      <h2>Actividades llenas de energía</h2>
+      <p>Clases de baile, yoga bajo luces LED, retos de escalada, torneos exprés... todo con ritmo, luz y entusiasmo. Guiado por estudiantes CAFYD en prácticas reales.</p>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Clases de baile">
+        <img src="https://www.ucentral.cl/ucentral/site/artic/20170308/imag/foto_0000001320170308181330.jpg">
+      </div>
+    </section>
+
+    <section>
+      <h2>Comida sana, rica y urbana</h2>
+      <p>Los alumnos de la Escuela de Hostelería Simone Ortega se lucen en nuestros food trucks. Prueba smoothies tropicales, bowls frescos y wraps que nutren y encantan.</p>
+      <div class="gallery-grid">
+        <img src="https://zaragozaflorece.es/wp-content/uploads/2024/04/Foodtrucks-zaragoza-florece-scaled.webp">
+        <img src="https://strapi.fitia.app/uploads/wraps_bc57b2c1f8.jpg">
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Lo que dicen los jóvenes</h2>
+      <div class="testimonial">“Este proyecto no será solo hacer deporte, sino que será una experiencia completa.” – Javier, 19 años</div>
+      <div class="testimonial">“Siento que aproveché la noche mejorando mi salud.” – Nuria, 20 años</div>
+      <div class="testimonial">“Dar clases aquí será el mejor entrenamiento como futura monitora.” – Carmen, CAFYD</div>
+    </section>
+
+    <section>
+      <h2>Contáctanos</h2>
+      <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea rows="5" placeholder="Tu mensaje..."></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+
+    <section>
+      <h2>¿Dónde ocurre?</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.5897235289224!2d-3.8281998240423163!3d40.351835859579655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4186e1f6b9343f%3A0x2cda03267a94e229!2sPolideportivo%20La%20Canaleja!5e0!3m2!1ses!2ses!4v1715881591296!5m2!1ses!2ses" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="cta">
+      <p>¡Únete a la revolución del ocio saludable!<br><span class="highlight">Te esperamos en ALCORCÓN LATE.</span></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 ALCORCÓN LATE · Con el apoyo del Ayuntamiento de Alcorcón
+    <div class="social">
+      <a href="#">Instagram</a> · <a href="#">Facebook</a> · <a href="#">TikTok</a>
+    </div>
+  </footer>
+</body>
+</html>
+
+
